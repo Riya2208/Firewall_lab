@@ -32,7 +32,6 @@ Through this project, I aimed to:
 
 1. **Configure Network**  
 - Set Kali Linux VM network mode to **Bridged Adapter** to allow communication between the VM and the host machine.  
-   ![Network Settings](./screenshots/network-settings.png)
 
 2. **Create Working Directory**
    ```bash
@@ -40,6 +39,7 @@ Through this project, I aimed to:
    cd firewall_lab
    sudo apt install gedit
    gedit index.html
+   ```
  - Added the following content to the HTML file:
  ```bash
   I'm able to see this through Firewall!
@@ -61,7 +61,7 @@ sudo ufw status
   ```
   - Note the VM's IP (used for host ↔ VM testing).
 6. **Verify Connectivity from Host**
-   - On the host machine (PowerShell / Terminal):
+ - On the host machine (PowerShell / Terminal):
 ```powershell
  ping 192.168.126.133
 ```
