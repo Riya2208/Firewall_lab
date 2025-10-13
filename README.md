@@ -63,14 +63,14 @@ sudo ufw status
 6. **Verify Connectivity from Host**
  - On the host machine (PowerShell / Terminal):
 ```powershell
- ping 192.168.126.133
+ ping 192.168.1.118
 ```
   - Successful replies confirm networking (bridged mode working).
   
 7. **Access Web Server from Host**
     -On host browser:
 ```cpp
-http://192.168.126.133:8080/
+http://192.168.1.118:8080/
 ```
   - The page should load because UFW is not enabled yet.
     
@@ -85,13 +85,13 @@ sudo ufw status
 9. Test Connectivity After Enabling
   - On your host machine (PowerShell):
     ```bash
-    ping 192.168.126.133
+    ping 192.168.1.118
     ```
    - The ping should fail, confirming the firewall is actively blocking inbound ICMP requests.
 10. Try Accessing Web Server Again
  -  On your host browser, enter:
    ```cpp
-http://192.168.126.133:8080/
+http://192.168.1.118:8080/
 ```
 - The page should not load, since the firewall is blocking port 8080 by default.
 11. Allow Incoming HTTP Traffic (Port 8080)
@@ -108,7 +108,7 @@ http://192.168.126.133:8080/
 12. Verify and Re-Test
    - Go back to your host browser and reload:
       ```cpp
-      http://192.168.126.133:8080/
+      http://192.168.1.118:8080/
   - The page should load successfully again, confirming that your new rule allows HTTP traffic.
 13. Optional: Deny Rule Test
   ```bash
