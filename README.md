@@ -118,7 +118,7 @@ http://192.168.1.118:8080/
  - Now, when you refresh the page in your host browser, it should fail to load again — confirming that the deny rule is active and functioning.
 
   ## 🔍 Screenshots
-All screenshots related to the lab setup and testing can be found in the [screenshots/](./screenshots) folder.
+All screenshots related to the lab setup and testing can be found in the [screenshots/](./screenshots.md) folder.
 
    
 
