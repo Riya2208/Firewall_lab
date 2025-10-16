@@ -120,6 +120,9 @@ http://192.168.1.118:8080/
   ## 🔍 Screenshots
 All screenshots related to the lab setup and testing can be found in the [screenshots/](./screenshots.md) folder.
 
+## 📊 Conclusion
+
+This lab helped me understand how a host-based firewall (UFW) filters and controls network traffic. By enabling, allowing, and denying specific ports, I observed how access to services is affected in real time. It strengthened my practical knowledge of Linux security and host protection mechanisms.
    
 
 
